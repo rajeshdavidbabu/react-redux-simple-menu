@@ -1,0 +1,11 @@
+@import "./colors";
+@import "./fonts";
+.book-shop{
+ margin-top:100px; 
+ background-color:$bgColor;
+ padding:20px;
+}
+.book-shop-title{
+ font-family: $font1;
+ font-size:30px;
+}

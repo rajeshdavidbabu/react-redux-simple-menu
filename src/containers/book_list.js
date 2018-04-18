@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { selectBook } from '../actions/index'
 import { bindActionCreators } from 'redux';
+import './book_list.css';
 
 class BookList extends Component {
     renderList () {
@@ -9,7 +10,6 @@ class BookList extends Component {
             return (
                 <li 
                 key={book.title} 
-                className="list-group-item"
                 onClick= {() => {this.props.selectBook(book)}}
                 >{book.title}</li>
             );    
@@ -18,9 +18,17 @@ class BookList extends Component {
 
     render () {
         return (
-            <ul class="list-group col-sm-4">
+            <div>
+            <div className = "book-list-holder col-xs-12 col-md-4">
+            
+            <div className = "book-list">
+            <div className = "book-list-title">Book List</div>
+            <ul>
                 {this.renderList()}
             </ul>
+           </div>
+           </div>
+            </div>
         );
     }
 }

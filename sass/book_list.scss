@@ -1,0 +1,29 @@
+@import "./colors";
+@import "./fonts";
+.book-list-holder{
+    padding:10px;
+}
+.book-list{
+    background-color: $pageColor;
+    padding: 10px;
+    font-family: $font2;
+    font-size:14px;
+    box-shadow: 0 1px 21px rgba(0, 0, 0, 0.19);
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        &:hover{
+            border-bottom:1px solid rgba(0, 0, 0, 0.19);
+        }
+    }
+}
+.book-list-title{
+    font-family:$font1;
+    font-size:24px;
+    border-bottom: 1px solid $lineColor;
+}
